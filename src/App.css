@@ -1,0 +1,7 @@
+/* Ensure the parent div uses flexbox */
+.app-container {
+    display: flex;
+    height: auto; /* Full viewport height */
+  }
+  
+  

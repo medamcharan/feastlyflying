@@ -1,0 +1,95 @@
+.project-boxX {
+    width: 300px;
+    height: 280px; /* Adjusted height for additional content */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 20px; /* Increased curvature */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+    cursor: pointer; /* Indicate clickable */
+    backdrop-filter: blur(10px); /* Glassy blur effect */
+  }
+  
+  .icon-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .project-icon {
+    font-size: 48px; /* Size of the icon */
+    color: #333; /* Dark icon color */
+    transition: color 0.3s;
+    margin-right: 15px; /* Space between the icon and title */
+  }
+  
+  .project-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000; /* Black text color by default */
+    margin: 0;
+    transition: color 0.3s;
+  }
+  
+  .project-description {
+    font-size: 14px;
+    color: #000; /* Black text color by default */
+    margin: 10px 0;
+    text-align: center; /* Center text alignment */
+  }
+  
+  .details-container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between the date and members */
+    margin-bottom: 10px;
+  }
+  
+  .project-date,
+  .team-members {
+    font-size: 12px;
+    color: #000; /* Black text color by default */
+    margin: 5px 0;
+    text-align: center; /* Center text alignment */
+  }
+  
+  /* Avatars container */
+  .avatars-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between avatars */
+  }
+  
+  .avatar {
+    font-size: 24px; /* Size of the avatars */
+  }
+  
+  .project-boxX:hover {
+    background: rgba(255, 255, 255, 0.3); /* Increase transparency on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .project-boxX.selected {
+    background: rgba(0, 123, 255, 0.3); /* Semi-transparent blue background when selected */
+    border: 2px solid rgba(0, 93, 179, 0.6); /* Semi-transparent darker blue border when selected */
+  }
+  
+  .project-boxX.selected .project-icon {
+    color: #fff; /* White icon color when selected */
+  }
+  
+  .project-boxX.selected .project-title,
+  .project-boxX.selected .project-description,
+  .project-boxX.selected .project-date,
+  .project-boxX.selected .team-members {
+    color: #fff; /* White text color when selected */
+  }
+  

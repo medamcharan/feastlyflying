@@ -1,0 +1,72 @@
+.project-box {
+    width: 220px;
+    height: 150px; /* Height adjusted to accommodate new text */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 20px; /* Increased curvature */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+    cursor: pointer; /* Indicate clickable */
+    backdrop-filter: blur(10px); /* Glassy blur effect */
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-icon {
+    font-size: 48px; /* Size of the icon */
+    color: #333; /* Dark icon color */
+    transition: color 0.3s;
+  }
+  
+  .project-box:hover {
+    background: rgba(255, 255, 255, 0.3); /* Increase transparency on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .project-box.selected {
+    background: rgba(0, 123, 255, 0.3); /* Semi-transparent blue background when selected */
+    border: 2px solid rgba(0, 93, 179, 0.6); /* Semi-transparent darker blue border when selected */
+  }
+  
+  .project-box.selected .project-icon {
+    color: #fff; /* White icon color when selected */
+  }
+  
+  .project-count {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000; /* Black text color by default */
+    margin: 0;
+    transition: color 0.3s;
+  }
+  
+  .project-label {
+    font-size: 16px;
+    color: #000; /* Black text color by default */
+    margin: 5px 0 0;
+    transition: color 0.3s;
+  }
+  
+  .completion-ratio {
+    font-size: 14px;
+    color: #000; /* Black text color by default */
+    margin: 5px 0 0;
+    transition: color 0.3s;
+  }
+  
+  /* White text color when selected */
+  .project-box.selected .project-count,
+  .project-box.selected .project-label,
+  .project-box.selected .completion-ratio {
+    color: #fff; /* White text color when selected */
+  }
+  

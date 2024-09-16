@@ -1,0 +1,52 @@
+/* Dashboard.css */
+
+/* Ensure the dashboard component fits within the viewport */
+.dashboard {
+  width: 100%; /* Full width of its container */
+  height: 100vh; /* Full height of its container */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  overflow: hidden; /* Prevent scrolling within the component */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  background-color: #ffffff;
+}
+
+/* Style the items within the sidebar */
+.dashboard-item {
+  display: flex;
+  align-items: center;
+ 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Style for selected item */
+.selected-item {
+  background-color: #3b82f6; /* Blue background */
+  color: white; /* White text */
+}
+
+/* Style for unselected items */
+.unselected-item {
+  color: #4b5563; /* Gray text */
+}
+
+.unselected-item:hover {
+  background-color: #e2e8f0; /* Light gray background on hover */
+}
+
+/* Add some margin between items */
+.item-margin {
+  margin-bottom: 8px; /* Space between items */
+}
+
+/* Add margin to Divider */
+.divider-margin {
+  margin: 16px 0; /* Space above and below the divider */
+}
+
+/* Position the Logout button at the bottom */
+.logout {
+  margin-top: 100px; /* Pushes the Logout button to the bottom of the container */
+}
