@@ -1,6 +1,5 @@
-// UpcomingMeetingEvent.tsx
 import React, { useState } from 'react';
-import './upcomingMeetingEvent.css'; // Ensure this file exists
+import './upcomingMeetingEvent.css';
 
 const UpcomingMeetingEvent: React.FC = () => {
   const [isSelected, setIsSelected] = useState<boolean>(false);

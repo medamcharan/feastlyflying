@@ -1,19 +1,18 @@
-/* transactions.css */
 .transactions-container {
     width: 100%;
-    max-width: 700px; /* Adjust as needed */
+    max-width: 700px;
     margin: 0 auto;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: Glassy background */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .transactions-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #000; /* Text color */
+    color: #000;
 }
 
 .transactions-table {
@@ -26,40 +25,40 @@
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover and color effect */
-    color: #000; /* Default text color */
+    transition: background-color 0.3s, color 0.3s;
+    color: #000;
 }
 
 .transactions-table th {
-    background-color: #f4f4f4; /* Header background */
+    background-color: #f4f4f4;
 }
 
 .transactions-table tr {
-    cursor: pointer; /* Indicate clickable rows */
+    cursor: pointer;
 }
 
 .transactions-table tr:hover {
-    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    background-color: rgba(0, 123, 255, 0.1);
 }
 
 .transactions-table tr.selected {
-    background-color: rgba(0, 123, 255, 0.3); /* Darker blue background when selected */
-    border: 2px solid rgba(0, 93, 179, 0.6); /* Blue border when selected */
+    background-color: rgba(0, 123, 255, 0.3);
+    border: 2px solid rgba(0, 93, 179, 0.6);
 }
 
 .transactions-table tr.selected th,
 .transactions-table tr.selected td {
-    color: #fff; /* White text color when selected */
+    color: #fff;
 }
 
 .status.completed {
-    color: #28a745; /* Green for completed */
+    color: #28a745;
 }
 
 .status.pending {
-    color: #ffc107; /* Yellow for pending */
+    color: #ffc107;
 }
 
 .status.failed {
-    color: #dc3545; /* Red for failed */
+    color: #dc3545;
 }

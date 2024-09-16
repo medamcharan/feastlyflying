@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Avathar from './Avathar.avif';
 import WW from './WW.jpeg';
-import './xyzProjectTeamBox.css'; // Ensure this file exists
+import './xyzProjectTeamBox.css';
 
-import { Group } from '@mui/icons-material'; // Import Material UI icon
+import { Group } from '@mui/icons-material';
 import { Avatar } from 'flowbite-react';
 
 const XYZProjectTeamBox: React.FC = () => {

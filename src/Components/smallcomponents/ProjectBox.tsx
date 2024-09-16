@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './projectBox.css'; // Ensure this file exists
+import './projectBox.css'; 
 
-import { Work } from '@mui/icons-material'; // Import Material UI icon
+import { Work } from '@mui/icons-material'; 
 
 const ProjectBox: React.FC = () => {
   const [isSelected, setIsSelected] = useState<boolean>(false);

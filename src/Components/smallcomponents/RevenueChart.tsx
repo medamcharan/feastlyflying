@@ -6,18 +6,17 @@ import './revenueChart.css';
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const RevenueChart: React.FC = () => {
-  // Sample data for the chart
   const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'], // X-axis labels
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
     datasets: [
       {
         label: 'Revenue',
-        data: [1200, 1500, 800, 1900, 1400, 1300, 1700, 1500], // Revenue data
-        backgroundColor: 'rgba(75, 192, 192, 0.6)', // Default bar color
-        borderColor: 'rgba(75, 192, 192, 1)', // Default bar border color
-        borderWidth: 1, // Bar border width
-        hoverBackgroundColor: 'rgba(0, 123, 255, 0.6)', // Bar color on hover
-        hoverBorderColor: 'rgba(0, 123, 255, 1)', // Border color on hover
+        data: [1200, 1500, 800, 1900, 1400, 1300, 1700, 1500],
+        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(0, 123, 255, 0.6)',
+        hoverBorderColor: 'rgba(0, 123, 255, 1)',
       },
     ],
   };

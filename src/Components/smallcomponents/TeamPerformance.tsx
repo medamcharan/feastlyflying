@@ -12,17 +12,17 @@ const TeamPerformance: React.FC = () => {
     setIsSelected(!isSelected);
   };
 
-  // Sample data for the chart
+  
   const data = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr'], // X-axis labels
+    labels: ['Jan', 'Feb', 'Mar', 'Apr'], 
     datasets: [
       {
         label: 'Performance',
-        data: [655, 595, 550, 815], // Performance data
-        backgroundColor: 'rgba(75, 192, 192, 0.6)', // Bar color
-        borderColor: 'rgba(75, 192, 192, 1)', // Bar border color
-        borderWidth: 1, // Bar border width
-        barThickness: 40, // Increase bar height
+        data: [655, 595, 550, 815], 
+        backgroundColor: 'rgba(75, 192, 192, 0.6)', 
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1,
+        barThickness: 40, 
       },
     ],
   };
@@ -47,10 +47,10 @@ const TeamPerformance: React.FC = () => {
       },
       y: {
         beginAtZero: true,
-        min: 0, // Minimum value of y-axis
-        max: 1000, // Maximum value of y-axis
+        min: 0, 
+        max: 1000, 
         ticks: {
-          stepSize: 100, // Step size for y-axis ticks
+          stepSize: 100, 
         },
       },
     },

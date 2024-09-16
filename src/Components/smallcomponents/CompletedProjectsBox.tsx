@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './projectBox.css'; // Ensure this file exists
-
-import { CheckCircle } from '@mui/icons-material'; // Import Material UI icon
+import './projectBox.css';
+import { CheckCircle } from '@mui/icons-material';
 
 const CompletedProjectsBox: React.FC = () => {
   const [isSelected, setIsSelected] = useState<boolean>(false);
@@ -20,7 +19,7 @@ const CompletedProjectsBox: React.FC = () => {
       </div>
       <h2 className="project-count">9,801</h2>
       <p className="project-label">Completed Projects</p>
-      <p className="completion-ratio">91% Completed</p> {/* Added completion ratio */}
+      <p className="completion-ratio">91% Completed</p>
     </div>
   );
 };

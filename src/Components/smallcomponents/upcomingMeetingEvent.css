@@ -1,34 +1,33 @@
-/* upcomingMeetingEvent.css */
 .event-box {
     width: 300px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 10px;
     transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
-    cursor: pointer; /* Indicate clickable */
-    backdrop-filter: blur(10px); /* Glassy blur effect */
+    cursor: pointer;
+    backdrop-filter: blur(10px);
 }
 
 .event-box:hover {
-    background: rgba(255, 255, 255, 0.3); /* Increase transparency on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .event-box.selected {
-    background: rgba(0, 123, 255, 0.3); /* Semi-transparent blue background when selected */
-    border: 2px solid rgba(0, 93, 179, 0.6); /* Semi-transparent darker blue border when selected */
+    background: rgba(0, 123, 255, 0.3);
+    border: 2px solid rgba(0, 93, 179, 0.6);
 }
 
 .event-title {
     font-size: 20px;
     font-weight: bold;
-    color: #000; /* Black text color by default */
+    color: #000;
     margin: 0 0 10px;
     transition: color 0.3s;
 }
@@ -37,30 +36,30 @@
 .event-date,
 .event-time {
     font-size: 14px;
-    color: #000; /* Black text color by default */
+    color: #000;
     margin: 5px 0;
-    text-align: center; /* Center text alignment */
+    text-align: center;
 }
 
 .meeting-link {
     margin-top: 10px;
     font-size: 14px;
-    color: #007bff; /* Blue link color */
+    color: #007bff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .meeting-link:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3;
 }
 
 .event-box.selected .event-title,
 .event-box.selected .event-description,
 .event-box.selected .event-date,
 .event-box.selected .event-time {
-    color: #fff; /* White text color when selected */
+    color: #fff;
 }
 
 .event-box.selected .meeting-link {
-    color: #fff; /* White link color when selected */
+    color: #fff;
 }

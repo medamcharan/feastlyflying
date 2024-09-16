@@ -62,7 +62,7 @@ const Dashboard: React.FC = () => {
           <span>Help</span>
         </div>
       </div>
-      <div className="dashboard-itemm unselected-item logout ">
+      <div className="dashboard-item unselected-item logout">
         <IconButton className="p-2 rounded-full hover:bg-blue-200">
           <LogoutIcon />
         </IconButton>
